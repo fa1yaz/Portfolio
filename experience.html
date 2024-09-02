@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Experience</title>
+    <link rel="stylesheet" href="experience.css">
+</head>
+<body>
+    <div class="container">
+        <div class="links">
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="projects.html">Projects</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="experience.html">Experience</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="skills.html">Skills</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="certifications.html">Certifications</a></div>
+        </div> 
+        <h1 data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="700">Experience</h1>
+        <div class="experience" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900">
+            <h2>Intern</h2>
+            <p><strong>Employment Type:</strong> Internship</p>
+            <p><strong>Company Name:</strong> InternPe</p>
+            <p><strong>Duration:</strong> Oct 2023 - Nov 2023</p>
+            <p><strong>Description:</strong></p>
+            <ul>
+                <li>Developed web applications using web technologies during a one-month internship at InternPe.</li>
+                <li>Collaborated with a remote team to solve problems and enhance web development skills.</li>
+                <li>Enhanced communication skills by coordinating with team members and supervisors online.</li>
+                <li>Improved technical skills and gained hands-on experience in web development.</li>
+            </ul>
+            <button onclick="showCompletionLetter()">Completion Letter</button>
+            <img id="completionLetter" src="completion letter.jpeg" alt="Completion Letter" style="display:none;">
+        </div>
+    </div>
+
+    <script>
+        function showCompletionLetter() {
+            var img = document.getElementById('completionLetter');
+            if (img.style.display === 'none') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({offset:0});
+        </script>
+</body>
+</html>
