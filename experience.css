@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -23,9 +24,7 @@ body {
     max-width: 900px;
     width: 100%;
     text-align: center;
-    line-height: 30px;
-    position: relative;
-    top: -90px;
+    line-height: 1.5;
 }
 
 /* Heading Styling */
@@ -55,8 +54,7 @@ h1 {
 ul {
     font-size: 1rem;
     margin-bottom: 10px;
-    margin:25px 10px 10px;
-    
+    margin: 25px 10px 10px;
 }
 
 /* Button Styling */
@@ -70,10 +68,11 @@ button {
     margin-top: 10px;
     font-size: 1rem;
     text-shadow: 0 0 10px #077b32;
+    transition: background-color 0.3s linear;
 }
 
 button:hover {
-    background-color:#b70606;
+    background-color: #b70606;
 }
 
 /* Image Styling */
@@ -84,59 +83,166 @@ img {
 }
 
 /* Media Queries for Responsiveness */
+
+/* Extra Small Devices (Phones, 320px and up) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .experience h2 {
+        font-size: 1.4rem;
+    }
+
+    .experience p,
+    .experience ul {
+        font-size: 0.9rem;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links a {
+        font-size: 1rem;
+        margin: 5px 0;
+        position: static;
+        text-align: left;
+    }
+}
+
+/* Small Devices (Phones, 480px and up) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .experience h2 {
+        font-size: 1.5rem;
+    }
+
+    .experience p,
+    .experience ul {
+        font-size: 0.95rem;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        font-size: 1.1rem;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
 @media (max-width: 768px) {
     h1 {
+        font-size: 2.8rem;
+    }
+
+    .experience h2 {
+        font-size: 1.6rem;
+    }
+
+    .experience p,
+    .experience ul {
+        font-size: 1rem;
+    }
+
+    .links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .links a {
+        font-size: 1.2rem;
+        margin: 5px 15px;
+    }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .experience h2 {
+        font-size: 1.8rem;
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .links a {
+        font-size: 1.4rem;
+        margin: 0 25px;
+    }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .experience h2 {
         font-size: 2rem;
     }
 
-    .experience h2 {
+    .links a {
         font-size: 1.5rem;
+        margin: 0 30px;
     }
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .experience h2 {
-        font-size: 1.2rem;
-    }
-
-    body {
-        padding: 10px;
-    }
+/* Links Container Styling */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
-.links a{
+
+/* Individual Link Styling */
+.links a {
     position: relative;
     font-size: 1.3rem;
     color: white;
-    margin: 0 20px;
     text-decoration: none;
     font-weight: 550;
-    transition: 0.3 linear;
-    top: -150px;
-    
-    
+    transition: 0.3s linear;
+    margin: 0 10px;
 }
-.links a::before{
+
+.links a::before {
     position: absolute;
-    content:"";
+    content: "";
     bottom: -3px;
     left: 0;
     width: 0%;
     height: 3px;
     background-color: #077b32;
-    transition: 0.2s linear;
-  }
-  .links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .links a:hover::before{
+    transition:  0.2s linear;
+}
+
+.links a:hover::before {
     width: 100%;
-  }
-   .links a:hover{
+}
+
+.links a:hover {
     color: #077b32;
-  }
+}
+

@@ -14,23 +14,16 @@
       <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
         Md <span>Faiyaz</span> Khan
       </div>
-      <div class="links">
-        <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
-        <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="projects.html">Projects</a></div>
-        <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="experience.html">Experience</a></div>
-        <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="skills.html">Skills</a></div>
-        <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="certifications.html">Certifications</a></div>
-    </div> 
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()" ></i>
+        <i class="fa-solid fa-bars fa-2x hamburg"onclick="hamburg()"></i>
     </div>
         <div class="dropdown" >
             <div class="links">
-              <a href="#">Home</a>
-              <a href="#">Projects</a>
-              <a href="#">Experience</a>
-              <a href="#">Skills</a>
-              <a href="#">Certifications</a>
-              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+              <a href="index.html">Home</a>
+              <a href="projects.html">Projects</a>
+              <a href="experience.html">Experience</a>
+              <a href="skills.html">Skills</a>
+              <a href="certifications.html">Certifications</a>
+              <i class="fa-solid fa-xmark fa-2x cancel" onclick="cancel()"></i>
             </div>
         </div>   
   </nav>
@@ -42,17 +35,18 @@
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Faiyaz</span></h1>
                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a<span class="typewriter-text"></span><label for=""></label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Results-driven cybersecurity enthusiast with extensive hands-on experience in penetration testing, ethical hacking, and web security. Skilled in identifying and exploiting vulnerabilities using advanced tools like Burp Suite, Metasploit, ZAP, etc. Proficient in network security, vulnerability assessment, and threat analysis. Seeking an entry-level role to leverage my expertise in protecting digital infrastructures and implementing robust security protocols.</p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Results-driven cybersecurity enthusiast with extensive hands-on experience in penetration testing, ethical hacking, and web security. Skilled in identifying and exploiting vulnerabilities using advanced tools like Burp Suite, Metasploit, ZAP, etc. Proficient in network security, vulnerability assessment, and threat analysis. Seeking an entry-level role to leverage my expertise in protecting digital infrastructures and implementing robust security protocols.</p>
                 <div class="social-links">
-                    <a href="https://github.com/fa1yaz"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/fa1yaz"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/fa1yaz"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/fa1yaz"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <div class="btn"data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">
-                    <button onclick="document.getElementById('resume').style.display='block'">My Resume</button>
-                    <div id="resume" style="display:none;">
-                        <embed src="Resume (1).docx" type="application/pdf" class="resume-container">
-                    </div>
-                </div>
+  <!-- Inside your .btn div -->
+<div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900">
+    <button onclick="showResume()">My Resume</button>
+    <a id="downloadResume" href="Resume.pdf" download="Faiyaz_Resume.pdf" style="display:none;">Download Resume</a>
+</div>
+
+                
             </div>
         </div>
     </section>
