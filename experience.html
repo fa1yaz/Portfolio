@@ -21,6 +21,22 @@
         <div class="experience" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900">
             <h2>Intern</h2>
             <p><strong>Employment Type:</strong> Internship</p>
+            <p><strong>Company Name:</strong> Vault-Tec Security</p>
+            <p><strong>Duration:</strong> Sep 2024 - Oct 2024</p>
+            <p><strong>Description:</strong></p>
+            <ul>
+                <li>Conducted independent vulnerability assessments and identified potential security risks in various systems and networks.</li>
+                <li>Analyzed and documented security incidents, providing insights for future preventive measures.</li>
+                <li>Implemented security best practices by configuring tools and recommending improvements to enhance the overall security posture.</li>
+                <li>Enhanced knowledge of cybersecurity techniques through real-world application, including penetration testing and security audits.</li>
+            </ul>
+            <button onclick="showCompletionLetter()">Completion Letter</button>
+            <img id="completionLetter" src="Completion(1) Letter.png" alt="Completion Letter" style="display:none;">
+        </div>
+        <br>
+        <div class="experience" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900">
+            <h2>Intern</h2>
+            <p><strong>Employment Type:</strong> Internship</p>
             <p><strong>Company Name:</strong> InternPe</p>
             <p><strong>Duration:</strong> Oct 2023 - Nov 2023</p>
             <p><strong>Description:</strong></p>
@@ -30,14 +46,24 @@
                 <li>Enhanced communication skills by coordinating with team members and supervisors online.</li>
                 <li>Improved technical skills and gained hands-on experience in web development.</li>
             </ul>
-            <button onclick="showCompletionLetter()">Completion Letter</button>
-            <img id="completionLetter" src="completion letter.jpeg" alt="Completion Letter" style="display:none;">
+            <button onclick="showCompletionLetter1()">Completion Letter</button>
+            <img id="completionLetter1" src="completion letter.jpeg" alt="Completion Letter" style="display:none;">
         </div>
     </div>
 
     <script>
         function showCompletionLetter() {
             var img = document.getElementById('completionLetter');
+            if (img.style.display === 'none') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        function showCompletionLetter1() {
+            var img = document.getElementById('completionLetter1');
             if (img.style.display === 'none') {
                 img.style.display = 'block';
             } else {
